@@ -1,0 +1,237 @@
+#######simx simulation result:#######
+<<<sgemm:
+./ci/blackbox.sh --clusters=1 --cores=4 --warps=2 --threads=2 --driver=simx --app=sgemm
+PERF: core0: instrs=110138, cycles=152514, IPC=0.722150
+PERF: core1: instrs=110138, cycles=152517, IPC=0.722136
+PERF: core2: instrs=110138, cycles=152520, IPC=0.722122
+PERF: core3: instrs=110140, cycles=152523, IPC=0.722121
+PERF: instrs=440554, cycles=152523, IPC=2.888443
+
+./ci/blackbox.sh --clusters=1 --cores=4 --warps=2 --threads=4 --driver=simx --app=sgemm
+PERF: core0: instrs=110376, cycles=78503, IPC=1.406010
+PERF: core1: instrs=110376, cycles=78506, IPC=1.405956
+PERF: core2: instrs=110376, cycles=78509, IPC=1.405903
+PERF: core3: instrs=110378, cycles=78512, IPC=1.405874
+PERF: instrs=441506, cycles=78512, IPC=5.623421
+
+./ci/blackbox.sh --clusters=1 --cores=4 --warps=2 --threads=8 --driver=simx --app=sgemm
+PERF: core0: instrs=110852, cycles=42341, IPC=2.618077
+PERF: core1: instrs=110852, cycles=42344, IPC=2.617892
+PERF: core2: instrs=110813, cycles=42063, IPC=2.634453
+PERF: core3: instrs=110815, cycles=42066, IPC=2.634313
+PERF: instrs=443332, cycles=42344, IPC=10.469771
+
+./ci/blackbox.sh --clusters=1 --cores=4 --warps=2 --threads=16 --driver=simx --app=sgemm
+PERF: core0: instrs=111804, cycles=25606, IPC=4.366321
+PERF: core1: instrs=111804, cycles=25609, IPC=4.365809
+PERF: core2: instrs=111804, cycles=25612, IPC=4.365297
+PERF: core3: instrs=111806, cycles=25615, IPC=4.364864
+PERF: instrs=447218, cycles=25615, IPC=17.459223
+
+./ci/blackbox.sh --clusters=1 --cores=4 --warps=4 --threads=4 --driver=simx --app=sgemm
+PERF: core0: instrs=110860, cycles=43340, IPC=2.557914
+PERF: core1: instrs=110860, cycles=43343, IPC=2.557737
+PERF: core2: instrs=110860, cycles=43346, IPC=2.557560
+PERF: core3: instrs=110862, cycles=43349, IPC=2.557429
+PERF: instrs=443442, cycles=43349, IPC=10.229579
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=2 --driver=simx --app=sgemm
+PERF: instrs=438844, cycles=596663, IPC=0.735497
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=4 --driver=simx --app=sgemm
+PERF: instrs=439082, cycles=300529, IPC=1.461030
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=8 --driver=simx --app=sgemm
+PERF: instrs=439558, cycles=152307, IPC=2.886000
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=16 --driver=simx --app=sgemm
+PERF: instrs=440510, cycles=78332, IPC=5.623628
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=32 --driver=simx --app=sgemm
+PERF: instrs=442414, cycles=54394, IPC=8.133508
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=4 --threads=32 --driver=simx --app=sgemm
+PERF: instrs=446202, cycles=33781, IPC=13.208668
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=8 --threads=32 --driver=simx --app=sgemm
+PERF: instrs=453778, cycles=30278, IPC=14.987053
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=16 --threads=32 --driver=simx --app=sgemm
+PERF: instrs=468930, cycles=32544, IPC=14.409107
+
+<<<<saxpy:
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=2 --driver=simx --app=saxpy
+PERF: instrs=5061, cycles=28323, IPC=0.178689
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=4 --driver=simx --app=saxpy
+PERF: instrs=5103, cycles=28323, IPC=0.180172
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=8 --driver=simx --app=saxpy
+PERF: instrs=5187, cycles=28323, IPC=0.183137
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=16 --driver=simx --app=saxpy
+PERF: instrs=5355, cycles=28323, IPC=0.189069
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=32 --driver=simx --app=saxpy
+PERF: instrs=5691, cycles=28323, IPC=0.200932
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=4 --threads=32 --driver=simx --app=saxpy
+PERF: instrs=6335, cycles=28323, IPC=0.223670
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=8 --threads=32 --driver=simx --app=saxpy
+PERF: instrs=7623, cycles=28323, IPC=0.269145
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=16 --threads=32 --driver=simx --app=saxpy
+PERF: instrs=10199, cycles=28323, IPC=0.360096
+
+<<<<sfilter:
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=2
+PERF: instrs=16503, cycles=23954, IPC=0.688945
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=4
+PERF: instrs=16741, cycles=13721, IPC=1.220101
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=8
+PERF: instrs=17214, cycles=8634, IPC=1.993746
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=16
+PERF: instrs=17376, cycles=8595, IPC=2.021641
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=32
+PERF: instrs=17118, cycles=8348, IPC=2.050551
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=4 --threads=32
+PERF: instrs=17762, cycles=8350, IPC=2.127186
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=8 --threads=32
+PERF: instrs=19050, cycles=8381, IPC=2.272998
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=16 --threads=32
+PERF: instrs=21626, cycles=8477, IPC=2.551138
+
+
+<<<<guassian ???? far away from the result in vortex paper
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=2
+PERF: instrs=659, cycles=4484, IPC=0.146967
+PERF: instrs=659, cycles=4484, IPC=0.146967
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=4
+PERF: instrs=701, cycles=4484, IPC=0.156334
+
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=8
+PERF: instrs=785, cycles=4484, IPC=0.175067
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=16
+PERF: instrs=953, cycles=4484, IPC=0.212533
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=32
+PERF: instrs=1289, cycles=4484, IPC=0.287467
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=4 --threads=32
+PERF: instrs=1933, cycles=4484, IPC=0.431088
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=8 --threads=32
+PERF: instrs=3221, cycles=4527, IPC=0.711509
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=16 --threads=32
+PERF: instrs=5797, cycles=4684, IPC=1.237617
+
+<<<<vecadd
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=2
+PERF: instrs=4439, cycles=8797, IPC=0.504604
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=4
+PERF: instrs=4677, cycles=6199, IPC=0.754477
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=8
+PERF: instrs=5153, cycles=4936, IPC=1.043963
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=16
+PERF: instrs=6105, cycles=4171, IPC=1.463678
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=32
+PERF: instrs=8006, cycles=3831, IPC=2.089794
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=4 --threads=32
+PERF: instrs=8648, cycles=3794, IPC=2.279388
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=8 --threads=32
+PERF: instrs=9936, cycles=3825, IPC=2.597647
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=16 --threads=32
+PERF: instrs=12512, cycles=3921, IPC=3.191023
+
+<<<<nearn:
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=2
+PERF: instrs=11700722, cycles=16239093, IPC=0.720528
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=4
+PERF: instrs=11696543, cycles=10811687, IPC=1.081843
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=8
+PERF: instrs=11691941, cycles=10787908, IPC=1.083801
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=16
+PERF: instrs=11692512, cycles=5410050, IPC=2.161258
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=32
+PERF: instrs=11692848, cycles=5411046, IPC=2.160922
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=4 --threads=32
+PERF: instrs=11693492, cycles=5411046, IPC=2.161041
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=8 --threads=32
+PERF: instrs=11694780, cycles=5411046, IPC=2.161279
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=16 --threads=32
+PERF: instrs=11697356, cycles=5411046, IPC=2.161755
+
+
+<<<<bfs
+!!!!error occurs!!!!! for simx rtlsim and vlsim
+LD_LIBRARY_PATH=/opt/pocl/runtime/lib:/home/yff/vortex/driver/rtlsim: ./bfs
+enter demo main
+Reading File
+Reading File completed!
+_clInit()
+[629] %Error: VX_csr_data.sv:257: Assertion failed in TOP.Vortex.genblk2[0].cluster.genblk2[0].core.pipeline.execute.csr_unit.csr_data:                  629: *** invalid CSR read address: 26 (#2)
+%Error: ../../hw/rtl/VX_csr_data.sv:257: Verilog $stop
+Aborting...
+make: *** [Makefile:54: run-rtlsim] 已放弃 (核心已转储)
+make: 离开目录“/home/yff/vortex/tests/opencl/bfs”
+
+
+######vlsim simulation result:######
+<<<<saxpy:
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=2 --driver=vlsim --app=saxpy
+PERF: instrs=5062, cycles=28749, IPC=0.176076
+
+<<<<guassian
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=2 --driver=vlsim 
+PERF: instrs=660, cycles=4956, IPC=0.133172
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=4
+PERF: instrs=702, cycles=5027, IPC=0.139646
+
+
+
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=2 --driver=simx --app=nearn
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=4 --driver=simx --app=nearn
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=8 --driver=simx --app=nearn
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=16 --driver=simx --app=nearn
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=32 --driver=simx --app=nearn
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=4 --threads=32 --driver=simx --app=nearn
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=8 --threads=32 --driver=simx --app=nearn
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=16 --threads=32 --driver=simx --app=nearn
+
+
+
+
+
+
+
+
+

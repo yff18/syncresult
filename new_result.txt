@@ -1,0 +1,133 @@
+<<<<<guassian:
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=2 --driver=simx --app=guassian
+PERF: instrs=897, cycles=5400, IPC=0.166111
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=4 --driver=simx --app=guassian
+PERF: instrs=1091, cycles=5400, IPC=0.202037
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=8 --driver=simx --app=guassian
+PERF: instrs=1479, cycles=5400, IPC=0.273889
+
+
+
+<<<bfs
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=2 --driver=simx --app=bfs
+PERF: instrs=67538, cycles=105095, IPC=0.642638
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=4 --driver=simx --app=bfs
+PERF: instrs=67924, cycles=57020, IPC=1.191231
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=8 --driver=simx --app=bfs
+PERF: instrs=68693, cycles=29834, IPC=2.302507
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=16 --driver=simx --app=bfs
+PERF: instrs=69463, cycles=29678, IPC=2.340555
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=32 --driver=simx --app=bfs
+PERF: instrs=70437, cycles=28911, IPC=2.436339
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=4 --threads=32 --driver=simx --app=bfs
+PERF: instrs=73523, cycles=28864, IPC=2.547221
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=8 --threads=32 --driver=simx --app=bfs
+PERF: instrs=79695, cycles=28907, IPC=2.756945
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=16 --threads=32 --driver=simx --app=bfs
+PERF: instrs=92039, cycles=29592, IPC=3.110266
+
+
+<<<kmeans: dont work for vortex
+I/O completed
+
+Number of objects: 100
+Number of features: 100
+ERROR: clCreateProgramWithSource() => -30
+ERROR: clEnqueueWriteBuffer d_cluster (size:100) => -38
+iterated 1 times
+Number of Iteration: 1
+
+<<<convolution no
+x::ArchDef const&)'
+collect2: error: ld returned 1 exit status
+make: *** [Makefile:40：convolution] 错误 1
+
+
+<<<psort:
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=2 --driver=simx --app=psort
+PERF: instrs=6530, cycles=13074, IPC=0.499465
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=4 --driver=simx --app=psort
+PERF: instrs=6916, cycles=8725, IPC=0.792665
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=8--driver=simx --app=psort
+PERF: instrs=7685, cycles=6248, IPC=1.229994
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=16 --driver=simx --app=psort
+PERF: instrs=8455, cycles=6306, IPC=1.340787
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=32 --driver=simx --app=psort
+PERF: instrs=9429, cycles=6066, IPC=1.554402
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=4 --threads=32 --driver=simx --app=psort
+PERF: instrs=12515, cycles=6071, IPC=2.061440
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=8 --threads=32 --driver=simx --app=psort
+PERF: instrs=18687, cycles=6211, IPC=3.008694
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=16 --threads=32 --driver=simx --app=psort
+PERF: instrs=31031, cycles=6651, IPC=4.665614
+
+
+
+<<<oclprintf:
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=2 --driver=simx --app=oclprintf
+PERF: instrs=2397, cycles=15718, IPC=0.152500
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=4 --driver=simx --app=oclprintf
+PERF: instrs=2591, cycles=15718, IPC=0.164843
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=8 --driver=simx --app=oclprintf
+PERF: instrs=2979, cycles=15718, IPC=0.189528
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=16 --driver=simx --app=oclprintf
+PERF: instrs=3755, cycles=15718, IPC=0.238898
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=2 --threads=32 --driver=simx --app=oclprintf
+PERF: instrs=5307, cycles=15718, IPC=0.337638
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=4 --threads=32 --driver=simx --app=oclprintf
+PERF: instrs=8393, cycles=15718, IPC=0.533974
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=8 --threads=32 --driver=simx --app=oclprintf
+PERF: instrs=14565, cycles=15834, IPC=0.919856
+
+./ci/blackbox.sh --clusters=1 --cores=1 --warps=16 --threads=32 --driver=simx --app=oclprintf
+PERF: instrs=26909, cycles=16317, IPC=1.649139
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
